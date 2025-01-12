@@ -48,7 +48,7 @@ const ForgotPass = () => {
       };
       try {
         const response = await axios.post(
-          "https://safetra-be.netlify.app/api/v1/auth/forgot-password-token",
+          "https://safetra-backend.onrender.com/api/v1/auth/forgot-password-token",
           JSON.stringify(params),
           {
             headers: {

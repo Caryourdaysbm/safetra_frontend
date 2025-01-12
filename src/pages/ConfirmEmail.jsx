@@ -15,7 +15,7 @@ const ConfirmEmail = () => {
 	const getNewToken = async (username) => {
 		if (!username) return;
 		await fetch(
-			`https://safetra-be.netlify.app/api/v1/auth/send-email-verification`,
+			`https://safetra-backend.onrender.com/api/v1/auth/send-email-verification`,
 			{
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
@@ -29,7 +29,7 @@ const ConfirmEmail = () => {
 			try {
 				if (token) {
 					const response = await fetch(
-						`https://safetra-be.netlify.app/api/v1/auth/verify-email`,
+						`https://safetra-backend.onrender.com/api/v1/auth/verify-email`,
 						{
 							method: 'POST',
 							headers: { 'Content-Type': 'application/json' },

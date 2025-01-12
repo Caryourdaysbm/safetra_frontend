@@ -24,7 +24,7 @@ const Login = () => {
         try {
           setLoading(true);
           if (password.length >= 8 && isEmail(email)) {
-            const response = await fetch(`https://safetra-be.netlify.app/api/v1/auth/login`, {
+            const response = await fetch(`https://safetra-backend.onrender.com/api/v1/auth/login`, {
               method: 'POST', headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({email, password})
             })

@@ -7,7 +7,7 @@ const Logout = () => {
   const handleLogout = async () => {
     try {
       const response = await fetch(
-        `https://safetra-be.netlify.app/api/v1/users/logout`,
+        `https://safetra-backend.onrender.com/api/v1/users/logout`,
         {
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         }
