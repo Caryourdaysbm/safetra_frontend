@@ -53,7 +53,7 @@ const NewTransaction = () => {
       console.log(transactionComplete, { ...transactionData });
       if (transactionComplete) {
         const response = await fetch(
-          'https://safetra-be.onrender.com/api/v1/transactions/create-transaction',
+          'https://safetra-be.netlify.app/api/v1/transactions/create-transaction',
           {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },

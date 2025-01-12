@@ -49,7 +49,7 @@ const Signup = () => {
     try {
       setLoading(true);
       if (isStrongPass && checkboxRef.current.checked) {
-        const response = await fetch(`https://safetra-be.onrender.com/api/v1/auth/register`, {
+        const response = await fetch(`https://safetra-be.netlify.app/api/v1/auth/register`, {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, username, password })
         });

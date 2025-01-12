@@ -23,7 +23,7 @@ const Transaction = () => {
       try {
         setLoading(true); // Set loading to true before making the request
         const endpoint = urlMap[table];
-        const url = `https://safetra-be.onrender.com/api/v1/transactions${endpoint}`;
+        const url = `https://safetra-be.netlify.app/api/v1/transactions${endpoint}`;
         
         console.log(`Fetching data from: ${url}`); // Log the URL
         

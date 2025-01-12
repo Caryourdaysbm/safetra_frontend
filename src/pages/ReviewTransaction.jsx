@@ -25,7 +25,7 @@ const ReviewTransaction = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `https://safetra-be.onrender.com/api/v1/transactions/create-transaction`,
+        `https://safetra-be.netlify.app/api/v1/transactions/create-transaction`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
@@ -37,7 +37,7 @@ const ReviewTransaction = () => {
       if (!response.ok) throw new Error
       const data = response.json()
       console.log(data)
-      /* https://safetra-be.onrender.com/api/v1/users?id=hbasj */
+      /* https://safetra-be.netlify.app/api/v1/users?id=hbasj */
       //newTransaction.amount = data.amount
       dispatch({ type: 'ADD_TRANSACTION', payload: { ...newTransaction } });
 
